@@ -39,6 +39,8 @@ ports property contain the ports that you want to expose in the final
 container. It is a comma separated list, and can contain `/tcp` or `/udp`
 (uses `/tcp` by default).
 
+It injects the files present in the `$WERCKER_ROOT` environment variable into `/pipeline/source` in the container.
+
 More information about the internal/docker-push step can be found
 [here](/docs/containers/pushing-containers.html).
 
